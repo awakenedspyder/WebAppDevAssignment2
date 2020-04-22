@@ -1,0 +1,18 @@
+<div class="ui comments">
+  <h3 class="ui dividing header">Comments</h3>
+{{#each commentList}}
+  <div class="comment">
+    <a class="avatar">
+    <span class="profilepic"><img src="{{picture}}" class="ui avatar image"></span></a>
+    <div class="content">
+      <a class="author">{{fullname}}</a>
+      <div class="metadata">
+        <span class="date">{{formatDate date}}</span>
+      </div>
+      <div class="text">
+        {{text}}
+      </div>
+    </div>
+  </div>
+{{/each}}
+</div>

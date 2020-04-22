@@ -1,0 +1,83 @@
+{{> menu}}
+<div class="ui basic modal">
+  <div class="ui icon header">
+    <i class="smile outline icon"></i>
+    Welcome Back {{fullname}}!
+  </div>
+  <div class="content">
+    <p>Your collection is up and running, start expanding your collection and have fun!</p>
+  </div>
+  <div class="actions">
+    <div class="ui green ok inverted button">
+      <i class="checkmark icon"></i>
+      Ok Thanks!
+    </div>
+  </div>
+</div>
+<section class="ui two column grid segment">
+        <div class="ui column">
+        <h1 class="ui center aligned header">
+          Welcome to the Smartphones App, {{fullname}}!
+        </h1> 
+        <h3 class="ui center aligned header">Your Account on the Smartphones App now contains:</h3>
+        <div class="ui two statistics">
+            <div class="ui big statistic">
+                <div class="value">
+                  <i class="building icon"></i>
+                    {{totalCompanies}}
+                </div>
+                <div class="label">
+                    Companies
+                </div>
+            </div>
+            <div class="ui big statistic">
+              <div class="value">
+                <i class="mobile icon"></i>
+                {{totalPhones}}
+              </div>
+              <div class="label">
+                Phones
+              </div>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+          <h5 class="ui center aligned header">Average phones per company is:</h5>
+          <div class ="ui one statistics">
+            <div class="ui big statistic">
+              <div class="value">
+                <i class="mobile icon"></i>
+                {{averagePhones}}
+              </div>
+              <div class="label">
+                Phones
+              </div>
+            </div>         
+          </div>
+          <div class="ui divider"></div>
+          <div class ="ui two statistics">
+            <div class="ui big statistic">
+              <div class="value">
+                <i class="mobile icon"></i>
+                {{minPhones}}
+              </div>
+              <div class="label">
+                Least phones per company
+              </div>
+            </div>
+            <div class="ui big statistic">
+              <div class="value">
+                <i class="mobile icon"></i>
+                {{maxPhones}}
+              </div>
+              <div class="label">
+                Most phones per company
+              </div>
+            </div>
+          </div>
+  </div>
+  <div class="ui column">
+    <section class="ui grid segment">
+      <img class="ui massive image" src="https://cdn.glitch.com/4272c279-b27a-4d9f-838c-b898c9dab5f9%2Fsmartphone-companies-logo-770x572.png?v=1587128771149"/> 
+    </section>
+  </div>
+</section>

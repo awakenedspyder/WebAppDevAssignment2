@@ -1,0 +1,26 @@
+<div class="ui centered cards">
+  {{#each companies}}
+    <form class = "ui form" action="/dashboard/editCompany/{{id}}" method="POST">
+    <div class="ui card">
+      <div class="image">
+        <img src="{{picture}}">
+      </div>
+      <div class="content">
+        <a class="header"><input class="align" placeholder="Title" type="text" name="title" required value = "{{trimName (uppercase title)}}"></a>
+        <div class="metadata">
+        <span class="date">Created: {{formatDate date}}</span>       
+        </div>
+      </div>
+      <div class="extra content">
+        <a href="/company/{{id}}" class="ui icon button">
+          <i class="icon folder open"></i>
+        </a>
+        <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+        <a href="/dashboard/deleteCompany/{{id}}" class="ui icon button">
+          <i class="icon trash"></i>
+        </a>
+      </div>
+    </div>
+  </form>
+  {{/each}}
+</div>

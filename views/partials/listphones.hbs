@@ -1,0 +1,30 @@
+{{#unless company.phones}}
+  <h3 class="ui center aligned message">It's very quiet in here... start adding some phone info to your collection!</h3>
+{{/unless}}
+
+{{#if company.phones}}
+  <div class="ui centered cards">
+    {{#each company.phones}}
+      <form class = "ui form" action="/company/{{../company.id}}/updatePhone/{{id}}" method="POST">
+        <div class="ui card">
+          <div class="image">
+            <img src="{{picture}}">
+          </div>
+          <div class="description">
+            <span class="header"> <input class="align" placeholder="Title" type="text" name="title" required value = "{{trimName (capitalise title)}}"> </span>
+            <span class="text">Release Year:<input class="align" placeholder="Release Year" size="4" type="double" name="releaseYear" required value = "{{year releaseYear}}"></span>       
+            <div class="dollar input">
+              <input class="align" placeholder="Price" type="text" size="6" name="price" required value = "{{price}}">
+            </div>
+          </div>
+          <div class="extra content">
+            <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+            <a href="/company/{{../company.id}}/deletephone/{{id}}" class="ui red icon button">
+              <i class="icon trash"></i>
+            </a> 
+          </div>
+        </div>
+    </form>
+    {{/each}}
+  </div>
+{{/if}}
