@@ -1,0 +1,37 @@
+{{> menu id="about"}}
+<section class="ui center aligned middle aligned segment">
+  <p>
+    <div class="ui two column grid segment">
+    <div class="column">
+      <h2 class="ui header">
+         The Smartphones app creator:
+      </h2>
+      <div class="ui centered cards">          
+        {{#each developers}}
+          <h2 class="ui header">
+            {{title}}
+          </h2>
+          {{> card}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="column">
+      <h3>
+        Find Us!
+      </h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9771.410822959928!2d-7.138704!3d52.246059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4042f0dcf13f7cfe!2sWaterford%20Institute%20of%20Technology!5e0!3m2!1sen!2sie!4v1586983590588!5m2!1sen!2sie" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  </div>
+    </div>
+  </p>
+  <div class="ui divider"></div>
+  <h1 class="ui header">
+    Community Forum
+  </h1>
+  <section class="ui raised two column grid segment">
+    <section class="ui column">
+      {{> addcomment}}
+    </section>
+    <section class="ui left aligned column">
+      {{> listcomments}}
+    </section>
+  </section>
+</section>

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "firstName": "Kannan",
+      "lastName": "Gs",
+      "email": "b",
+      "password": "b",
+      "id": "a4a5d44e-9364-4942-9cc8-3ca72c1651e5",
+      "picture": "http://res.cloudinary.com/kannangs/image/upload/v1586914113/bwjenieksckabejejdan.jpg"
+    },
+    {
+      "firstName": "Not",
+      "lastName": "Kannan",
+      "email": "a",
+      "password": "a",
+      "id": "a4a5d44e-9364-4942-9cc8-3ca72c1651e6",
+      "picture": "http://res.cloudinary.com/kannangs/image/upload/v1586914113/bwjenieksckabejejdan.jpg"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Tests",
+      "email": "test@mail.com",
+      "password": "Test123",
+      "id": "dc5acf3a-c185-4334-bdbc-b4230783bb66",
+      "picture": "http://res.cloudinary.com/kannangs/image/upload/v1587127517/osvztgqt3lv69lucrynb.png"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Test",
+      "email": "test2@mail.com",
+      "password": "Test123",
+      "id": "83309411-6043-4118-8c3d-c9ba13efe11e",
+      "picture": "http://res.cloudinary.com/kannangs/image/upload/v1587127691/t3zwxz0peub32slwi22j.jpg"
+    },
+    {
+      "firstName": "Kannan",
+      "lastName": "Test",
+      "email": "kgswarup19@gmail.com",
+      "password": "Test123",
+      "id": "e6dbcb2a-fe26-4bdc-9365-6f59f27dd133",
+      "picture": "http://res.cloudinary.com/kannangs/image/upload/v1587128219/pi0pnphyh45jr2qqcmbq.jpg"
+    },
+    {
+      "firstName": "Kannan",
+      "lastName": "Kannan",
+      "email": "kannan@kannan.com",
+      "password": "Test123",
+      "id": "df79500b-751f-42b7-b05a-df0afc94b10c",
+      "picture": "http://res.cloudinary.com/kannangs/image/upload/v1587582993/m0qaqlawhp5ozbcfdzga.jpg"
+    }
+  ]
+}
